@@ -1,7 +1,10 @@
-// Initial: read text input and apply to box
-document.getElementById('apply-btn').addEventListener('click', function() {
-  var color = document.getElementById('color-input').value;
-  document.getElementById('box').style.backgroundColor = color;
+const applyButton = document.querySelector('#apply-btn');
+const colorInput = document.querySelector('#color-input');
+const box = document.querySelector('#box');
+
+applyButton.addEventListener('click', () => {
+  const selectedColor = colorInput.value;
+  box.style.backgroundColor = selectedColor;
 });
 
 document.getElementById('random-btn').addEventListener('click', function() {
